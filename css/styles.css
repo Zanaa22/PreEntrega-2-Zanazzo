@@ -1,0 +1,292 @@
+html{
+    font-size: 62.5%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(26, 44, 56);
+
+}
+/* Encabezado */
+.logo img{
+    width: 30%;
+}
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    background-color: #0f212e;
+}
+.mainMenuLista{
+    display: flex;
+    font-size: 2.2rem;
+    list-style: none;
+    flex-direction: row;
+    color: white;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 5%;
+    width: 100%;
+}
+.mainMenu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    color: #3c7499;
+}
+/* termina encabezado */
+
+/* index */
+.fontColor{
+    color: white;
+}
+.h2Index{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 2.3rem;
+    width: 100%;
+}
+.h3Index{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-size: 3rem;
+}
+.destacados img{
+    width: 200px;
+    transition: transform 0.7s;
+    border: solid #0f212e 5px;
+    border-radius: 15%;
+}
+.destacados{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 4vh;
+    grid-row-gap: 2vw;
+}
+.gridContainer{ 
+    display: grid;
+    justify-content: center;
+}
+.todos a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 3.5rem;
+    text-align: center;
+}
+.todos{
+    display: flex;
+    justify-content: center;
+    margin-left: 2%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.destacados img:hover{
+    transform: translateY(-10%);
+}
+/* termina index */
+
+/* footer */
+footer{
+    background-color: rgb(15,33,46);
+}
+footer h3{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+.footerDiv{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(2, 1fr);
+}
+.redesLogos img{
+    width: 3vw;
+}
+.redesLogos{
+    display: flex;
+    justify-content: center;
+}
+.redesPagos{
+    display: flex;
+    justify-content: center;
+}
+.redesPagos img{
+    width: 4vw;
+}
+/* termina footer */
+
+/* Nosotros */
+.h2Nosotros{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 3rem;
+}
+.h3Nosotros{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 2rem;
+}
+/* Termina nosotros */
+
+/* Productos */
+.categorias{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 3%;
+}
+.categorias img {
+    color: white;
+}
+/* Termina productos */
+
+/* Sorprendeme */
+.h2Sorp{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sorpProducto figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8%;
+    /* margin-left: 50%; */
+}
+.sorpProducto figcaption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    width: 100%;
+}
+.sorpProducto{
+    margin: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sorpContainer{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.sorpProducto img{
+    width: 100%;
+    border-radius: 15%;
+}
+
+
+/* Termina sorprendeme */
+
+/* Contacto */
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    color: white;
+}
+.contactForm{
+    background-color: rgb(15,33,46);
+    padding: 20px;
+}
+.contactForm fieldset{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.contactForm input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+.contactForm input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+.contactForm textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 120%;
+    width: 30vw;
+}
+
+/* Termina contacto */
+
+/* Mobile first */
+@media (max-width: 972px) {
+    .mainMenuLista{
+        font-size: 1.6rem;
+    }
+    footer h3{
+        font-size: 1.6rem;
+    }
+}
+@media(max-width: 750px) {
+    .destacados {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2.5vh;
+    }
+    .destacados img{
+        width: 80%;
+    }
+    .h2Index{
+        font-size: 1.6rem;
+    }
+    .h3Index{
+        font-size: 2.1rem;
+    }
+    .mainMenuLista {
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-end;
+    }
+    .logo img{
+        width: 40%;
+    }
+    .todos p{
+        font-size: 1.8rem;
+    }
+    .h2Sorp{
+        font-size: 2rem;
+    }
+}
+
+/* Termina mobile first */
+
+/* Animation stuff */
+
+/* Termina animation stuff */
